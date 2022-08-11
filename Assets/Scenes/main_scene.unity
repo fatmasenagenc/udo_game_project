@@ -529,7 +529,7 @@ GameObject:
   - component: {fileID: 115472630}
   - component: {fileID: 115472629}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: play
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1424,8 +1424,9 @@ GameObject:
   - component: {fileID: 544409929}
   - component: {fileID: 544409931}
   - component: {fileID: 544409930}
+  - component: {fileID: 544409932}
   m_Layer: 5
-  m_Name: RawImage (3)
+  m_Name: settings_in_image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1440,7 +1441,7 @@ RectTransform:
   m_GameObject: {fileID: 544409928}
   m_LocalRotation: {x: -0, y: -0, z: -0.707107, w: 0.7071066}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.112185635, y: 0.6654588, z: 0.6825219}
+  m_LocalScale: {x: 0.112185635, y: 0.7403229, z: 0.6825219}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 638595302}
@@ -1448,7 +1449,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -52.100006, y: -138.29999}
+  m_AnchoredPosition: {x: -50, y: -132.3}
   m_SizeDelta: {x: 2048, y: 512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &544409930
@@ -1486,6 +1487,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 544409928}
   m_CullTransparentMesh: 1
+--- !u!61 &544409932
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544409928}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -205.07385, y: -67.146706}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 835.9457, y: 135.29341}
+  m_EdgeRadius: 0
 --- !u!1 &590056971
 GameObject:
   m_ObjectHideFlags: 0
@@ -1800,7 +1827,7 @@ GameObject:
   - component: {fileID: 636249008}
   - component: {fileID: 636249007}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: money_text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2357,8 +2384,9 @@ GameObject:
   - component: {fileID: 791648861}
   - component: {fileID: 791648863}
   - component: {fileID: 791648862}
+  - component: {fileID: 791648864}
   m_Layer: 5
-  m_Name: Text (TMP) (2)
+  m_Name: add_money_text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2482,6 +2510,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 791648860}
   m_CullTransparentMesh: 1
+--- !u!61 &791648864
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791648860}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -96.74947, y: -13.082966}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 71.86818, y: 22.101593}
+  m_EdgeRadius: 0
 --- !u!1001 &818069133
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2704,7 +2758,7 @@ GameObject:
   - component: {fileID: 844599906}
   - component: {fileID: 844599905}
   m_Layer: 5
-  m_Name: RawImage (5)
+  m_Name: Money_in_image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3147,7 +3201,7 @@ GameObject:
   - component: {fileID: 1185451687}
   - component: {fileID: 1185451686}
   m_Layer: 5
-  m_Name: RawImage
+  m_Name: money_image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4330,7 +4384,7 @@ GameObject:
   - component: {fileID: 1715795939}
   - component: {fileID: 1715795938}
   m_Layer: 5
-  m_Name: RawImage (2)
+  m_Name: market_image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4345,7 +4399,7 @@ RectTransform:
   m_GameObject: {fileID: 1715795936}
   m_LocalRotation: {x: -0, y: -0, z: -0.707107, w: 0.7071066}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.112185635, y: 0.6654588, z: 0.6825219}
+  m_LocalScale: {x: 0.10653905, y: 0.73272103, z: 0.7515088}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 638595302}
@@ -4353,7 +4407,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -233, y: -126}
+  m_AnchoredPosition: {x: -233, y: -117.80005}
   m_SizeDelta: {x: 2048, y: 512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1715795938
@@ -4493,7 +4547,7 @@ GameObject:
   - component: {fileID: 1745830944}
   - component: {fileID: 1745830943}
   m_Layer: 5
-  m_Name: RawImage (1)
+  m_Name: settings_image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4508,7 +4562,7 @@ RectTransform:
   m_GameObject: {fileID: 1745830941}
   m_LocalRotation: {x: -0, y: -0, z: -0.707107, w: 0.7071066}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.112185635, y: 0.6654588, z: 0.6825219}
+  m_LocalScale: {x: 0.10653905, y: 0.73272103, z: 0.7515088}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 638595302}
@@ -4516,7 +4570,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -91, y: -126}
+  m_AnchoredPosition: {x: -91, y: -117.8}
   m_SizeDelta: {x: 2048, y: 512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1745830943
@@ -5214,8 +5268,9 @@ GameObject:
   - component: {fileID: 1943896086}
   - component: {fileID: 1943896088}
   - component: {fileID: 1943896087}
+  - component: {fileID: 1943896089}
   m_Layer: 5
-  m_Name: RawImage (4)
+  m_Name: market_in_image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5238,7 +5293,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -242.3, y: -103}
+  m_AnchoredPosition: {x: -242.3, y: -97}
   m_SizeDelta: {x: 2048, y: 512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1943896087
@@ -5276,6 +5331,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1943896085}
   m_CullTransparentMesh: 1
+--- !u!61 &1943896089
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943896085}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -18.313385, y: -51.458755}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1893.4944, y: 334.45316}
+  m_EdgeRadius: 0
 --- !u!1 &1969862642
 GameObject:
   m_ObjectHideFlags: 0
