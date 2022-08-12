@@ -9,6 +9,7 @@ public class MainSceneButtonMethods : MonoBehaviour
     public int MoneySceneIndex = 2;
     public int MarketIndex = 3;
     public int SettingsIndex = 4;*/
+
     public void StartGame()
     {
         SceneManager.LoadScene(1);
