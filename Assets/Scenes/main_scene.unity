@@ -2278,7 +2278,7 @@ MonoBehaviour:
   _length: 9.4
   _blendIn: 1.5
   _blendOut: 0.69999886
-  animationClip: {fileID: -203655887218126122, guid: 91b188c80898a6a4b837a27dae978477,
+  animationClip: {fileID: -203655887218126122, guid: d484ecca09ce7914d96276d7ac2a603f,
     type: 3}
   clipOffset: -0.3000002
   clipWrapMode: 0
@@ -11259,7 +11259,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 658b760f2eb874b42b9ecf1d34f32d7d,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.029880883
+      value: -0.32342058
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 658b760f2eb874b42b9ecf1d34f32d7d,
         type: 3}
@@ -11269,7 +11269,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 658b760f2eb874b42b9ecf1d34f32d7d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.99955356
+      value: 0.9462553
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 658b760f2eb874b42b9ecf1d34f32d7d,
         type: 3}
@@ -11284,7 +11284,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 658b760f2eb874b42b9ecf1d34f32d7d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 183.425
+      value: 217.74
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 658b760f2eb874b42b9ecf1d34f32d7d,
         type: 3}
