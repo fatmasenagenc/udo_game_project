@@ -2524,7 +2524,6 @@ Material:
   m_Name: Neon SDF Material
   m_Shader: {fileID: 4800000, guid: 14eb328de4b8eb245bb7cea29e4ac00b, type: 3}
   m_ValidKeywords:
-  - BEVEL_ON
   - GLOW_ON
   m_InvalidKeywords:
   - MASK_HARD
@@ -2574,7 +2573,7 @@ Material:
     - _FaceShininess: 0
     - _FaceUVSpeedX: 0
     - _FaceUVSpeedY: 0
-    - _GlowInner: 1
+    - _GlowInner: 0
     - _GlowOffset: -0.526
     - _GlowOuter: 1
     - _GlowPower: 1
@@ -2615,10 +2614,10 @@ Material:
     m_Colors:
     - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
     - _EnvMatrixRotation: {r: 0, g: 0, b: 0, a: 0}
-    - _FaceColor: {r: 1, g: 0.000303527, b: 0.1811643, a: 1}
-    - _GlowColor: {r: 1, g: 0.2113207, b: 0.35359234, a: 1}
+    - _FaceColor: {r: 1, g: 0, b: 0.070531845, a: 1}
+    - _GlowColor: {r: 1, g: 0.22075468, b: 0.22075468, a: 1}
     - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
-    - _OutlineColor: {r: 1, g: 0.000303527, b: 0.1811643, a: 1}
+    - _OutlineColor: {r: 1, g: 0.04213227, b: 0, a: 1}
     - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0, g: 0, b: 0, a: 1}
