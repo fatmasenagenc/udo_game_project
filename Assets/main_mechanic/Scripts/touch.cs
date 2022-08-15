@@ -49,7 +49,7 @@ public class touch : MonoBehaviour
             Debug.Log("global current score set to " + Globals.currentGameScore);
             //failed = true;
             //Time.timeScale = 0;
-
+            EndGame();
         }
     }
 
