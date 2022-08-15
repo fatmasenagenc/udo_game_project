@@ -44,7 +44,7 @@ public class touch : MonoBehaviour
             IEnumerator LoadFailScreen()
             {
                 Time.timeScale = 0;
-                yield return new WaitForSecondsRealtime(5); //animasyon süresini giricez, ya da biraz fazla garanti olur
+                yield return new WaitForSecondsRealtime(5); //animasyon sï¿½resini giricez, ya da biraz fazla garanti olur
                 Time.timeScale = 1;
                 EndGame();
             }
