@@ -14,19 +14,10 @@ public class touch : MonoBehaviour
     [SerializeField] private Shader shader;
     [SerializeField] private Material material;
 
-    //private int score = 0;
     [SerializeField] private TMP_Text scoreText;
     private bool entered;
     private GameObject collided;
 
-    //private bool failed = false;
-
-    //void Update()
-    //{
-    //    if (failed) {
-    //        Invoke("EndGame", 3f);
-    //    }
-    //}
     public void OnTriggerEnter(Collider collider)
     {
         entered = true;
@@ -48,8 +39,15 @@ public class touch : MonoBehaviour
             //Globals.currentGameScore = score;
             Debug.Log("global current score set to " + Globals.currentGameScore);
             //failed = true;
-            //Time.timeScale = 0;
+            StartCoroutine(LoadFailScreen());
 
+            IEnumerator LoadFailScreen()
+            {
+                Time.timeScale = 0;
+                yield return new WaitForSecondsRealtime(5); //animasyon süresini giricez, ya da biraz fazla garanti olur
+                Time.timeScale = 1;
+                EndGame();
+            }
         }
     }
 

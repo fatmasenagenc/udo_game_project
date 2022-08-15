@@ -460,6 +460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shader: {fileID: -6465566751694194690, guid: 7a920849e041f4a48b3c3bc18b100a2c, type: 3}
   material: {fileID: 2100000, guid: 1a663c3784a6aaf45a5bd5a9932d88da, type: 2}
+  waitBeforeFailScreen: 0
   scoreText: {fileID: 1357141681}
 --- !u!135 &96683040
 SphereCollider:
@@ -3330,6 +3331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shader: {fileID: -6465566751694194690, guid: 883a68ffba2c678448871d0da2e6fa53, type: 3}
   material: {fileID: 2100000, guid: 16c2ba8f20164c34ab4aff8b24ba7fff, type: 2}
+  waitBeforeFailScreen: 0
   scoreText: {fileID: 1357141681}
 --- !u!135 &1804458618
 SphereCollider:
@@ -3473,6 +3475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shader: {fileID: -6465566751694194690, guid: 4bb345441a1a5aa48b81689bb534c321, type: 3}
   material: {fileID: 2100000, guid: b842aab8ff14fe6448c6bde1c3593d05, type: 2}
+  waitBeforeFailScreen: 5
   scoreText: {fileID: 1357141681}
 --- !u!23 &1849250037
 MeshRenderer:
