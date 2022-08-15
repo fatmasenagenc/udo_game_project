@@ -7,6 +7,7 @@ public static class Globals
 {
     public static float speedMultiplier = 1.5f;
     public static float timeOffset = 0.5f;
+    public static int currentGameScore = 0;
 }
 
 public class cubeMovement : MonoBehaviour
@@ -15,7 +16,7 @@ public class cubeMovement : MonoBehaviour
     private float gradualIncrease = 5f;
     //private bool speedIncreased;
     //private int count;
-    [SerializeField] private Material material;
+    //[SerializeField] private Material material;
 
     //private void Start()
     //{
@@ -45,10 +46,10 @@ public class cubeMovement : MonoBehaviour
         transform.Translate(Vector3.back * Time.deltaTime * Globals.speedMultiplier);
         //Debug.Log("next speed for " + name + " -- " + Globals.speedMultiplier);
 
-        if (transform.position.z <= -46f)
-        {
-            GetComponent<MeshRenderer>().material = material;
-        }
+        //if (transform.position.z <= -46f)
+        //{
+        //    GetComponent<MeshRenderer>().material = material;
+        //}
         //if (speedIncreased == false)
         //{
         //    speedMultiplier += gradualIncrease;

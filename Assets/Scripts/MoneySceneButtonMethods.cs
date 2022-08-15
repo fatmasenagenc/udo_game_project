@@ -16,11 +16,11 @@ public class MoneySceneButtonMethods : MonoBehaviour
     {
 
     }*/
-    public int MainSceneIndex;
+    //public int MainSceneIndex;
 
     public void BackToMain()
     {
-        SceneManager.LoadScene(MainSceneIndex);
+        SceneManager.LoadScene(0);
     }
     
     //buralara gerçek para harcamayla alakalý baðlantýlar konabilir
