@@ -14,6 +14,7 @@ public class touch : MonoBehaviour
 {
     [SerializeField] private Shader shader;
     [SerializeField] private Material material;
+    [SerializeField] private GameObject disablePlane;
 
     [SerializeField] private TMP_Text scoreText;
     private bool entered;
@@ -44,10 +45,11 @@ public class touch : MonoBehaviour
             Globals.failed = true;
             int temp = PlayerPrefs.GetInt("totalMoney") + Globals.currentGameScore;
             PlayerPrefs.SetInt("totalMoney", temp);
+            disablePlane.SetActive(true);
             fillScene.Stop();
             failScene.Play();
             
-            Invoke("EndGame", 5);
+            Invoke("EndGame", 4.5f);
 
             //StartCoroutine(LoadFailScreen());
 

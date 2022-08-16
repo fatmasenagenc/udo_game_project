@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PauseResumeQuit : MonoBehaviour
 {
     [SerializeField] private GameObject panel;
+    //[SerializeField] private GameObject disablePanel;
     [SerializeField] private GameObject halfFull;
     [SerializeField] private GameObject full;
     private float deltaTimeHolder;
@@ -14,6 +15,14 @@ public class PauseResumeQuit : MonoBehaviour
     {
         FillGlass();
     }
+
+    //private void Update()
+    //{
+    //    if (Globals.failed)
+    //    {
+    //        disablePanel.SetActive(true);
+    //    }
+    //}
     private void FillGlass()
     {
         StartCoroutine(fill());
