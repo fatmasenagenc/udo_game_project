@@ -22,6 +22,8 @@ public class touch : MonoBehaviour
     [SerializeField] private Cutscene failScene;
     [SerializeField] private Cutscene fillScene;
 
+    [SerializeField] private ParticleSystem ps;
+
     public void OnTriggerEnter(Collider collider)
     {
         entered = true;
@@ -75,6 +77,7 @@ public class touch : MonoBehaviour
         GetComponent<MeshRenderer>().material.shader = shader;
         if (entered)
         {
+            ps.Play();
             Debug.Log("caught - " + name);
             Globals.currentGameScore = int.Parse(scoreText.text) + 5;
             scoreText.text = Globals.currentGameScore.ToString("0");
