@@ -2252,6 +2252,52 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
       _scriptExpression: 
+    - _serializedData: '{"parameterName":"localEulerAngles","declaringTypeName":"UnityEngine.Transform","transformHierarchyPath":"","parameterType":1}'
+      _isDisabled: 0
+      _curves:
+      - serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 34
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      - serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 34
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      - serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 34
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      _scriptExpression: 
   _length: 5
   _blendIn: 0
   _blendOut: 0
@@ -7872,8 +7918,8 @@ MonoBehaviour:
   - {fileID: 5755790}
   - {fileID: 345647079}
   _length: 5
-  _viewTimeMin: -2.2005897
-  _viewTimeMax: 14.482506
+  _viewTimeMin: -2.1490085
+  _viewTimeMax: 5.147811
 --- !u!4 &746250597
 Transform:
   m_ObjectHideFlags: 0
@@ -8159,7 +8205,7 @@ Light:
   m_BounceIntensity: 100
   m_ColorTemperature: 5174
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 0, z: 0, w: -3.528626e+28}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -8936,7 +8982,7 @@ Light:
   m_BounceIntensity: 100
   m_ColorTemperature: 5174
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 5.03e-43, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -22690,7 +22736,7 @@ Light:
   m_BounceIntensity: 100
   m_ColorTemperature: 5174
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: 3.49e-42, z: 1.02e-43, w: 3.67342e-40}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
