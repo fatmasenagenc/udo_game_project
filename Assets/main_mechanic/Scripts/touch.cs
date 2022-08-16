@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Slate;
 
 //public static class TransferData
 //{
@@ -17,6 +18,8 @@ public class touch : MonoBehaviour
     [SerializeField] private TMP_Text scoreText;
     private bool entered;
     private GameObject collided;
+    [SerializeField] private Cutscene failScene;
+    [SerializeField] private Cutscene fillScene;
 
     public void OnTriggerEnter(Collider collider)
     {
@@ -38,21 +41,30 @@ public class touch : MonoBehaviour
             Debug.Log("global current score will be " + Globals.currentGameScore);
             //Globals.currentGameScore = score;
             Debug.Log("global current score set to " + Globals.currentGameScore);
-            //failed = true;
-            StartCoroutine(LoadFailScreen());
+            Globals.failed = true;
+            int temp = PlayerPrefs.GetInt("totalMoney") + Globals.currentGameScore;
+            PlayerPrefs.SetInt("totalMoney", temp);
+            fillScene.Stop();
+            failScene.Play();
+            
+            Invoke("EndGame", 5);
 
-            IEnumerator LoadFailScreen()
-            {
-                Time.timeScale = 0;
-                yield return new WaitForSecondsRealtime(5); //animasyon s�resini giricez, ya da biraz fazla garanti olur
-                Time.timeScale = 1;
-                EndGame();
-            }
+            //StartCoroutine(LoadFailScreen());
+
+            //IEnumerator LoadFailScreen()
+            //{
+            //    Time.timeScale = 0;
+            //    yield return new WaitForSecondsRealtime(6); //animasyon s�resini giricez, ya da biraz fazla garanti olur
+            //    Time.timeScale = 1;
+            //    Globals.failed = false;
+            //    EndGame();
+            //}
         }
     }
 
     public void EndGame()
     {
+        Globals.failed = false;
         SceneManager.LoadScene(5);
     }
 

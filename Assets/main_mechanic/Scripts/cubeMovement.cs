@@ -8,6 +8,7 @@ public static class Globals
     public static float speedMultiplier = 1.5f;
     public static float timeOffset = 0.5f;
     public static int currentGameScore = 0;
+    public static bool failed = false;
 }
 
 public class cubeMovement : MonoBehaviour
