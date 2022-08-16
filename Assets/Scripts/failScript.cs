@@ -12,6 +12,8 @@ public class failScript : MonoBehaviour
     {
         gameScore.text = "+" + Globals.currentGameScore.ToString("0");
         Globals.currentGameScore = 0;
+        //PlayerPrefs.GetInt(totalMoney);
+        //PlayerPrefs.SetInt(totalMoney, 0);
     }
 
     public void playAgain()
