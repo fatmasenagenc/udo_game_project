@@ -20,7 +20,6 @@ public class GameSceneButtonMethods : MonoBehaviour
 
     public void continueGame()
     {
-        //SceneManager.LoadScene(SceneManager.GetActiveScene());
         SceneManager.GetActiveScene();
         exitPanel.SetActive(false);
     }

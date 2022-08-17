@@ -2,7 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
+/**
+ * Yalnýzca on/off butonlarýnýn toggle görüntüsü yapýldý. Ayrýca 
+ * kullanýcý seçimi kaydediliyor PlayerPrefs ile. Ayarlar oyun içinde
+ * herhangi bir þeye baðlý deðil.
+ */
 public class settings : MonoBehaviour
 {
     public TMP_Text musicOn;
