@@ -11,8 +11,9 @@ public class failScript : MonoBehaviour
     private void Awake()
     {
         gameScore.text = "+" + PlayerPrefs.GetInt("currentScore").ToString("0");
-        //Globals.currentGameScore = 0;
-    }
+        Globals.speedMultiplier = 1.5f;
+        Globals.timeOffset = 0.5f;
+}
 
     public void playAgain()
     {
