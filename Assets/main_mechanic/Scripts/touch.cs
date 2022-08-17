@@ -10,6 +10,7 @@ public class touch : MonoBehaviour
     [SerializeField] private Shader shader;
     [SerializeField] private Material material;
     [SerializeField] private GameObject disablePlane;
+    [SerializeField] private GameObject pauseButton;
 
     [SerializeField] private TMP_Text scoreText;
    
@@ -44,7 +45,7 @@ public class touch : MonoBehaviour
             disablePlane.SetActive(true);
             fillScene.Stop();
             failScene.Play();
-            
+            pauseButton.SetActive(false);
             Invoke("EndGame", 4.5f);
         }
     }

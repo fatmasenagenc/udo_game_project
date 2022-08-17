@@ -10,89 +10,89 @@ public class PauseResumeQuit : MonoBehaviour
     [SerializeField] private GameObject halfFull;
     [SerializeField] private GameObject full;
 
-    private bool paused;
+    //private bool paused;
 
-    private void Start()
-    {
-        FillGlass();
-    }
+    //private void Start()
+    //{
+    //    FillGlass();
+    //}
 
-    private void FillGlass()
-    {
-        StartCoroutine(fill());
+    //private void FillGlass()
+    //{
+    //    StartCoroutine(fill());
 
-        IEnumerator fill()
-        {
+    //    IEnumerator fill()
+    //    {
 
-            while (!Globals.failed && !paused)
-            {
-                if (!Globals.failed && !paused)
-                {
-                    yield return new WaitForSecondsRealtime(1);
-                    halfFull.SetActive(true);
-                }
-                else if (paused)
-                {
-                    yield break;
-                }
-                else if (Globals.failed)
-                {
-                    Empty();
-                    yield break;
-                }
+    //        while (!Globals.failed && !paused)
+    //        {
+    //            if (!Globals.failed && !paused)
+    //            {
+    //                yield return new WaitForSecondsRealtime(1);
+    //                halfFull.SetActive(true);
+    //            }
+    //            else if (paused)
+    //            {
+    //                yield break;
+    //            }
+    //            else if (Globals.failed)
+    //            {
+    //                Empty();
+    //                yield break;
+    //            }
 
-                if (!Globals.failed && !paused)
-                {
-                    yield return new WaitForSecondsRealtime(1);
-                    full.SetActive(true);
-                }
-                else if (paused)
-                {
-                    yield break;
-                }
-                else if (Globals.failed)
-                {
-                    Empty();
-                    yield break;
-                }
+    //            if (!Globals.failed && !paused)
+    //            {
+    //                yield return new WaitForSecondsRealtime(1);
+    //                full.SetActive(true);
+    //            }
+    //            else if (paused)
+    //            {
+    //                yield break;
+    //            }
+    //            else if (Globals.failed)
+    //            {
+    //                Empty();
+    //                yield break;
+    //            }
                 
 
-                if (!Globals.failed && !paused)
-                {
-                    yield return new WaitForSecondsRealtime(0.6f);
-                    Empty();
-                }
-                else if (paused)
-                {
-                    yield break;
-                }
-                else if (Globals.failed)
-                {
-                    Empty();
-                    yield break;
-                }
+    //            if (!Globals.failed && !paused)
+    //            {
+    //                yield return new WaitForSecondsRealtime(0.6f);
+    //                Empty();
+    //            }
+    //            else if (paused)
+    //            {
+    //                yield break;
+    //            }
+    //            else if (Globals.failed)
+    //            {
+    //                Empty();
+    //                yield break;
+    //            }
                 
-            }
-        }
-    }
+    //        }
+    //    }
+    //}
 
-    private void Empty()
-    {
-        halfFull.SetActive(false);
-        full.SetActive(false);
-    }
+    //private void Empty()
+    //{
+    //    halfFull.SetActive(false);
+    //    full.SetActive(false);
+    //}
     public void Pause()
     {
         panel.SetActive(true);
-        paused = true;
+        //paused = true;
         Time.timeScale = 0;
     }
     public void KeepPlaying()
     {
         panel.SetActive(false);
-        paused = false;
+        //paused = false;
         Time.timeScale = 1;
-        FillGlass();
+        //FillGlass();
     }
 
     public void Quit()
