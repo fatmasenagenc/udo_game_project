@@ -10,10 +10,8 @@ public class failScript : MonoBehaviour
 
     private void Awake()
     {
-        gameScore.text = "+" + Globals.currentGameScore.ToString("0");
-        Globals.currentGameScore = 0;
-        //PlayerPrefs.GetInt(totalMoney);
-        //PlayerPrefs.SetInt(totalMoney, 0);
+        gameScore.text = "+" + PlayerPrefs.GetInt("currentScore").ToString("0");
+        //Globals.currentGameScore = 0;
     }
 
     public void playAgain()

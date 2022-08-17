@@ -13,47 +13,19 @@ public class Spawning : MonoBehaviour
     [SerializeField] private GameObject greenSpawn;
     [SerializeField] private GameObject blueSpawn;
 
-    //[SerializeField] private float minTime;
-    //[SerializeField] private float maxTime;
-
-    //private float redSpawnRandomTime;
-    //private float greenSpawnRandomTime;
-    //private float blueSpawnRandomTime;
-
     private float spawnTime;
     private float time;
-    //private float timeOffset = 0.2f;
 
-    // Start is called before the first frame update
     void Start()
     {
-        //redSpawnRandomTime = generateRandomTime();
-        //greenSpawnRandomTime = generateRandomTime();
-        //blueSpawnRandomTime = generateRandomTime();
-
         spawnTime = generateRandomTime() + Globals.timeOffset;
 
         time = 0;
     }
 
-    // Update is called once per frame
     void Update()
     {
         time += Time.deltaTime;
-
-        //if (time >= redSpawnRandomTime)
-        //{
-        //    spawnRed();
-        //    redSpawnRandomTime = generateRandomTime();
-        //} else if (time >= greenSpawnRandomTime)
-        //{
-        //    spawnGreen();
-        //    greenSpawnRandomTime = generateRandomTime();
-        //} else if (time >= blueSpawnRandomTime)
-        //{
-        //    spawnBlue();
-        //    blueSpawnRandomTime = generateRandomTime();
-        //}
 
         if (time >= spawnTime)
         {
@@ -76,7 +48,6 @@ public class Spawning : MonoBehaviour
 
     float generateRandomTime()
     {
-        //return Random.Range(minTime, maxTime);
         return Random.value;
     }
     void spawnRed()

@@ -6,39 +6,26 @@ using UnityEngine.SceneManagement;
 public class PauseResumeQuit : MonoBehaviour
 {
     [SerializeField] private GameObject panel;
-    //[SerializeField] private GameObject disablePanel;
     [SerializeField] private GameObject halfFull;
     [SerializeField] private GameObject full;
-    private float deltaTimeHolder;
 
     private void Start()
     {
         FillGlass();
     }
 
-    //private void Update()
-    //{
-    //    if (Globals.failed)
-    //    {
-    //        disablePanel.SetActive(true);
-    //    }
-    //}
     private void FillGlass()
     {
         StartCoroutine(fill());
 
         IEnumerator fill()
         {
-            //if (Globals.failed)
-            //{
-            //    yield break;
-            //}
 
             while (!Globals.failed)
             {
                 if (!Globals.failed)
                 {
-                    yield return new WaitForSecondsRealtime(1); //animasyon s?resini giricez, ya da biraz fazla garanti olur
+                    yield return new WaitForSecondsRealtime(1);
                     halfFull.SetActive(true);
                 } else
                 {
@@ -69,20 +56,7 @@ public class PauseResumeQuit : MonoBehaviour
                 }
             }
         }
-        //deltaTimeHolder = Time.deltaTime;
-        //Invoke("GlassHalfFill", deltaTimeHolder + 1f);
-        //Invoke("GlassFill", deltaTimeHolder + 2f);
-        //Invoke("Empty", deltaTimeHolder + 2.6f);
     }
-    private void GlassHalfFill()
-    {
-        halfFull.SetActive(true);
-    }
-
-    private void GlassFill()
-    {
-        full.SetActive(true);
-    } 
 
     private void Empty()
     {
@@ -91,25 +65,19 @@ public class PauseResumeQuit : MonoBehaviour
     }
     public void Pause()
     {
-        //burada sahneyi durdur
-        Debug.Log("pausedayým");
         panel.SetActive(true);
         Time.timeScale = 0;
     }
     public void KeepPlaying()
     {
-        //sahneyi devam ettir
-        Debug.Log("keep playdeyim");
         panel.SetActive(false);
         Time.timeScale = 1;
     }
 
     public void Quit()
     {
-        //globaldeki current score sýfýrla & ana menüye dön
-        Debug.Log("quitteyim");
         Time.timeScale = 1;
-        Globals.currentGameScore = 0;
+        PlayerPrefs.SetInt("currentScore", 0);
         SceneManager.LoadScene(0);
     }
 }

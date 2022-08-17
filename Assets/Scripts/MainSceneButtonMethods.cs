@@ -6,18 +6,25 @@ using UnityEngine.SceneManagement;
 
 public class MainSceneButtonMethods : MonoBehaviour
 {
-    /*public int GamingSceneIndex;
-    public int MoneySceneIndex = 2;
-    public int MarketIndex = 3;
-    public int SettingsIndex = 4;*/
     [SerializeField] private TMP_Text money;
+
     private void Start()
     {
-        if (PlayerPrefs.GetInt("totalMoney") == 0)
+        //PlayerPrefs.DeleteAll();
+
+        if (!PlayerPrefs.HasKey("totalMoney"))
         {
             PlayerPrefs.SetInt("totalMoney", 0);
+
         }
+        else
+        {
+            int temp = PlayerPrefs.GetInt("totalMoney") + PlayerPrefs.GetInt("currentScore");
+            PlayerPrefs.SetInt("totalMoney", temp);
+        }
+
         money.text = PlayerPrefs.GetInt("totalMoney").ToString("0");
+        PlayerPrefs.SetInt("currentScore", 0);
     }
     public void StartGame()
     {
@@ -26,19 +33,16 @@ public class MainSceneButtonMethods : MonoBehaviour
 
     public void ToMoneyScene()
     {
-        //Debug.Log(MoneySceneIndex);
         SceneManager.LoadScene(2);
     }
 
     public void ToMarket()
     {
-        //Debug.Log(MarketIndex);
         SceneManager.LoadScene(3);
     }
 
     public void ToSettings()
     {
-        //Debug.Log(SettingsIndex);
         SceneManager.LoadScene(4);
     }
 }

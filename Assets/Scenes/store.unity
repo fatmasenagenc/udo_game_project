@@ -3536,7 +3536,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: MARKET
+  m_text: STORE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 02e88c899818c4643824aa0b80cb3a66, type: 2}
   m_sharedMaterial: {fileID: 448060377725822182, guid: 02e88c899818c4643824aa0b80cb3a66,
