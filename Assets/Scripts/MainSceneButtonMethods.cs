@@ -12,6 +12,11 @@ public class MainSceneButtonMethods : MonoBehaviour
     {
         //PlayerPrefs.DeleteAll();
 
+        if (!PlayerPrefs.HasKey("highScore"))
+        {
+            PlayerPrefs.SetInt("highScore", 0);
+        }
+
         if (!PlayerPrefs.HasKey("totalMoney"))
         {
             PlayerPrefs.SetInt("totalMoney", 0);
@@ -46,3 +51,4 @@ public class MainSceneButtonMethods : MonoBehaviour
         SceneManager.LoadScene(4);
     }
 }
+
